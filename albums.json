@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Aven Colony",
+    "link": "https://alexanderbrandon.bandcamp.com/album/aven-colony-original-game-soundtrack",
+    "image": "assets/bandcampalbums/aven_colony.avif",
+    "imageAlt": "Aven Colony soundtrack art"
+  },
+  {
+    "title": "Bejeweled 3",
+    "link": "https://skaven252.bandcamp.com/album/bejeweled-3",
+    "image": "assets/bandcampalbums/bejeweled_3.avif",
+    "imageAlt": "Bejeweled 3 soundtrack cover art"
+  },
+  {
+    "title": "Deus Ex",
+    "link": "https://alexanderbrandon.bandcamp.com/album/conspiravision-deus-ex-remixed",
+    "image": "assets/bandcampalbums/deus_ex_conspiravision.avif",
+    "imageAlt": "Conspiravision: Deus Ex Remixed cover art"
+  },
+  {
+    "title": "Tyrian",
+    "link": "https://alexanderbrandon.bandcamp.com/album/tyrian-original-soundtrack",
+    "image": "assets/bandcampalbums/tyrian.avif",
+    "imageAlt": "Tyrian Original Soundtrack cover art"
+  },
+  {
+    "title": "Unreal Tournament",
+    "link": "https://materiacollective.bandcamp.com/album/tournament-rematch-unreal-tournament-remixed",
+    "image": "assets/bandcampalbums/unreal_tournament_rematch.avif",
+    "imageAlt": "Tournament Rematch: Unreal Tournament Remixed cover art"
+  }
+]
