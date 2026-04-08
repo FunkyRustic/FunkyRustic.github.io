@@ -1654,6 +1654,577 @@ textarea {
   width: fit-content;
 }
 
+body.museum-page {
+  --surface: rgba(18, 24, 34, 0.82);
+  --surface-strong: rgba(22, 29, 41, 0.96);
+  --text: #f4eadb;
+  --muted: #b9c4cf;
+  --accent: #f39a3e;
+  --accent-dark: #ffd280;
+  --line: rgba(144, 191, 232, 0.18);
+  --shadow: 0 24px 48px rgba(3, 8, 16, 0.42);
+  background:
+    linear-gradient(rgba(74, 185, 255, 0.11), rgba(74, 185, 255, 0.11)),
+    linear-gradient(rgba(243, 154, 62, 0.13), rgba(243, 154, 62, 0.13)),
+    linear-gradient(rgba(244, 234, 219, 0.08), rgba(244, 234, 219, 0.08)),
+    linear-gradient(rgba(74, 185, 255, 0.1), rgba(74, 185, 255, 0.1)),
+    linear-gradient(rgba(243, 154, 62, 0.11), rgba(243, 154, 62, 0.11)),
+    linear-gradient(rgba(74, 185, 255, 0.09), rgba(74, 185, 255, 0.09)),
+    linear-gradient(rgba(244, 234, 219, 0.07), rgba(244, 234, 219, 0.07)),
+    linear-gradient(rgba(243, 154, 62, 0.1), rgba(243, 154, 62, 0.1)),
+    linear-gradient(rgba(74, 185, 255, 0.07), rgba(74, 185, 255, 0.07)),
+    linear-gradient(rgba(243, 154, 62, 0.08), rgba(243, 154, 62, 0.08)),
+    linear-gradient(rgba(74, 185, 255, 0.09), rgba(74, 185, 255, 0.09)),
+    linear-gradient(rgba(243, 154, 62, 0.1), rgba(243, 154, 62, 0.1)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(116, 159, 201, 0.07) 0 1px,
+      transparent 1px 64px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      rgba(116, 159, 201, 0.065) 0 1px,
+      transparent 1px 64px
+    ),
+    radial-gradient(circle at top left, rgba(74, 185, 255, 0.2), transparent 22%),
+    radial-gradient(circle at top right, rgba(243, 154, 62, 0.2), transparent 24%),
+    linear-gradient(180deg, #071019 0%, #0c1420 44%, #0a1017 100%);
+  background-size:
+    140px 140px,
+    96px 96px,
+    52px 52px,
+    184px 184px,
+    72px 72px,
+    128px 128px,
+    40px 40px,
+    88px 88px,
+    148px 148px,
+    60px 60px,
+    116px 116px,
+    76px 76px,
+    100% 100%,
+    100% 100%,
+    auto,
+    auto,
+    auto;
+  background-position:
+    6% 10rem,
+    calc(100% - 11rem) 14rem,
+    18% 34rem,
+    calc(100% - 20rem) 46rem,
+    10% 62rem,
+    calc(100% - 9rem) 78rem,
+    28% 92rem,
+    calc(100% - 24rem) 112rem,
+    14% 132rem,
+    calc(100% - 12rem) 154rem,
+    calc(100% - 18rem) 174rem,
+    22% 192rem,
+    0 0,
+    0 0,
+    0 0,
+    100% 0,
+    0 0;
+  background-repeat: no-repeat;
+}
+
+.museum-page .site-header {
+  border-color: rgba(144, 191, 232, 0.14);
+  background:
+    linear-gradient(135deg, rgba(7, 13, 20, 0.94), rgba(12, 21, 31, 0.96));
+  box-shadow: 0 18px 40px rgba(2, 6, 12, 0.32);
+}
+
+.museum-page .site-nav {
+  color: rgba(233, 243, 252, 0.78);
+}
+
+.museum-page .site-nav a:hover,
+.museum-page .path-card a:hover {
+  color: #fff4cf;
+}
+
+.museum-page .button-secondary {
+  border-color: rgba(144, 191, 232, 0.18);
+  background: linear-gradient(145deg, rgba(20, 33, 47, 0.96), rgba(28, 42, 58, 0.92));
+  color: #e8f3fc;
+  box-shadow: 0 14px 28px rgba(3, 8, 16, 0.28);
+}
+
+.museum-page .button-secondary:hover {
+  border-color: rgba(144, 191, 232, 0.3);
+  background: linear-gradient(145deg, rgba(25, 40, 58, 0.98), rgba(32, 48, 67, 0.94));
+}
+
+.museum-page .button-quiet {
+  border-color: rgba(144, 191, 232, 0.14);
+  background: rgba(18, 27, 39, 0.64);
+  color: rgba(232, 243, 252, 0.76);
+}
+
+.museum-page .button-quiet:hover {
+  border-color: rgba(144, 191, 232, 0.24);
+  background: rgba(22, 32, 46, 0.86);
+  color: #fff4cf;
+}
+
+.museum-page-hero {
+  max-width: none;
+  padding-top: 3.5rem;
+}
+
+.museum-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.museum-hero-main,
+.museum-hero-panel,
+.museum-card,
+.museum-timeline-shell,
+.museum-endcap {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.museum-hero-main {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  background:
+    linear-gradient(180deg, rgba(8, 15, 24, 0.9), rgba(11, 18, 27, 0.98)),
+    linear-gradient(90deg, rgba(243, 154, 62, 0.08), transparent 28%);
+}
+
+.museum-hero-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0) 18%),
+    repeating-linear-gradient(180deg, rgba(144, 191, 232, 0.07) 0 1px, transparent 1px 4px);
+  pointer-events: none;
+}
+
+.museum-hero-main > * {
+  position: relative;
+  z-index: 1;
+}
+
+.museum-hero-main h1,
+.museum-card h2,
+.museum-card h3,
+.museum-timeline-title,
+.museum-endcap h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.museum-hero-main h1 {
+  margin: 0;
+  max-width: 13ch;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 0.94;
+}
+
+.museum-hero-text,
+.museum-card p,
+.museum-timeline-copy,
+.museum-endcap p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.museum-hero-text {
+  max-width: 52rem;
+  margin: 1rem 0 0;
+  font-size: 1.06rem;
+}
+
+.museum-hero-panel {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  padding: 1.45rem;
+  background:
+    linear-gradient(160deg, rgba(17, 26, 38, 0.96), rgba(10, 17, 26, 0.94));
+}
+
+.museum-panel-label,
+.museum-chip,
+.museum-year,
+.museum-code-line {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.museum-panel-label {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.museum-status-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.museum-status-item {
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(144, 191, 232, 0.14);
+  border-radius: 18px;
+  background: rgba(10, 17, 25, 0.72);
+}
+
+.museum-status-item strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #f3eadb;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+}
+
+.museum-status-item span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.museum-code-line {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(243, 154, 62, 0.2);
+  border-radius: 18px;
+  background: rgba(6, 11, 17, 0.82);
+  color: #ffd280;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.museum-jump-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.museum-jump-link,
+.museum-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid rgba(144, 191, 232, 0.2);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 44%),
+    linear-gradient(145deg, rgba(17, 27, 39, 0.88), rgba(12, 20, 30, 0.86));
+  color: #e8f3fc;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 10px 20px rgba(3, 8, 16, 0.18);
+}
+
+.museum-jump-link:hover {
+  color: #fff4cf;
+  border-color: rgba(243, 154, 62, 0.28);
+}
+
+.museum-card {
+  padding: 1.45rem;
+  background:
+    linear-gradient(145deg, rgba(17, 25, 36, 0.96), rgba(12, 19, 29, 0.94));
+}
+
+.museum-card h2,
+.museum-card h3,
+.museum-endcap h2 {
+  margin: 0;
+  color: #f4eadb;
+  line-height: 1.08;
+}
+
+.museum-card h3 {
+  font-size: 1.35rem;
+}
+
+.museum-card p {
+  margin: 0.8rem 0 0;
+}
+
+.museum-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.museum-chip {
+  color: var(--accent-dark);
+  border-color: rgba(243, 154, 62, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(243, 154, 62, 0.12), transparent 44%),
+    linear-gradient(145deg, rgba(49, 34, 24, 0.92), rgba(29, 21, 17, 0.88));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 233, 204, 0.04),
+    0 10px 18px rgba(8, 6, 5, 0.18);
+}
+
+.museum-card-trackers {
+  background:
+    linear-gradient(145deg, rgba(18, 32, 48, 0.98), rgba(12, 23, 35, 0.95));
+}
+
+.museum-card-shareware {
+  background:
+    linear-gradient(145deg, rgba(38, 26, 18, 0.98), rgba(24, 16, 12, 0.95));
+}
+
+.museum-card-epic {
+  background:
+    linear-gradient(145deg, rgba(20, 24, 42, 0.98), rgba(13, 16, 29, 0.95));
+}
+
+.museum-card-legacy {
+  background:
+    linear-gradient(145deg, rgba(24, 38, 31, 0.98), rgba(14, 24, 20, 0.95));
+}
+
+.museum-timeline-shell {
+  position: relative;
+  padding: 0.35rem 0 0.35rem 2rem;
+}
+
+.museum-timeline-shell::before {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  top: 0.9rem;
+  bottom: 0.9rem;
+  width: 1px;
+  background:
+    linear-gradient(180deg, rgba(243, 154, 62, 0.45), rgba(74, 185, 255, 0.22));
+  box-shadow: 0 0 18px rgba(74, 185, 255, 0.08);
+}
+
+.museum-timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.museum-timeline-item {
+  position: relative;
+}
+
+.museum-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.72rem;
+  top: 1.7rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 2px solid rgba(243, 154, 62, 0.56);
+  border-radius: 999px;
+  background: #0a131e;
+  box-shadow: 0 0 0 6px rgba(10, 19, 30, 0.82);
+}
+
+.museum-exhibit {
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(15, 23, 34, 0.97), rgba(10, 16, 25, 0.95));
+  box-shadow: var(--shadow);
+}
+
+.museum-exhibit-media {
+  position: relative;
+  overflow: hidden;
+  min-height: 14rem;
+  border-radius: 22px;
+  border: 1px solid rgba(144, 191, 232, 0.16);
+  background:
+    radial-gradient(circle at top right, rgba(243, 154, 62, 0.18), transparent 34%),
+    linear-gradient(145deg, rgba(18, 31, 45, 0.98), rgba(12, 21, 31, 0.96));
+}
+
+.museum-exhibit-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 14rem;
+  object-fit: cover;
+}
+
+.museum-exhibit-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(180deg, transparent, rgba(7, 13, 20, 0.92));
+}
+
+.museum-date-pill,
+.museum-label-pill,
+.museum-link {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.museum-date-pill,
+.museum-label-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.museum-date-pill {
+  border: 1px solid rgba(243, 154, 62, 0.28);
+  background:
+    radial-gradient(circle at top left, rgba(243, 154, 62, 0.18), transparent 46%),
+    linear-gradient(145deg, rgba(55, 39, 26, 0.92), rgba(34, 24, 18, 0.9));
+  color: var(--accent-dark);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 233, 204, 0.05),
+    0 10px 18px rgba(8, 6, 5, 0.18);
+}
+
+.museum-label-pill {
+  border: 1px solid rgba(144, 191, 232, 0.2);
+  background:
+    radial-gradient(circle at top left, rgba(74, 185, 255, 0.16), transparent 46%),
+    linear-gradient(145deg, rgba(21, 36, 50, 0.92), rgba(14, 24, 35, 0.9));
+  color: #d7eefc;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 10px 18px rgba(3, 8, 16, 0.16);
+}
+
+.museum-exhibit-copy {
+  display: grid;
+  gap: 0.8rem;
+  align-content: start;
+  min-width: 0;
+  padding: 0.15rem 0.1rem;
+}
+
+.museum-exhibit-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.museum-exhibit-title {
+  margin: 0;
+  color: #f4eadb;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.02;
+}
+
+.museum-exhibit-subtitle {
+  margin: -0.2rem 0 0;
+  color: rgba(232, 243, 252, 0.72);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.museum-exhibit-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.museum-meta-row,
+.museum-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.museum-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(144, 191, 232, 0.18);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.04), transparent 46%),
+    linear-gradient(145deg, rgba(17, 27, 39, 0.86), rgba(12, 20, 30, 0.82));
+  color: #e8f3fc;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 10px 18px rgba(3, 8, 16, 0.16);
+}
+
+.museum-link:hover {
+  color: #fff4cf;
+  border-color: rgba(243, 154, 62, 0.26);
+}
+
+.museum-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid rgba(144, 191, 232, 0.18);
+  border-radius: 999px;
+  background: rgba(17, 27, 39, 0.72);
+}
+
+.museum-link-icon:hover {
+  border-color: rgba(243, 154, 62, 0.26);
+  background: rgba(21, 33, 48, 0.9);
+}
+
+.museum-link-icon img {
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+}
+
+.museum-endcap {
+  padding: 1.7rem;
+  background:
+    radial-gradient(circle at top right, rgba(243, 154, 62, 0.14), transparent 30%),
+    linear-gradient(145deg, rgba(15, 24, 35, 0.96), rgba(9, 15, 23, 0.94));
+}
+
+.museum-endcap h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.museum-endcap p {
+  max-width: 44rem;
+  margin: 0.8rem 0 0;
+}
+
 @media (max-width: 960px) {
   .hero,
   .feature-band,
@@ -1677,6 +2248,11 @@ textarea {
 
   .hero {
     padding-top: 3rem;
+  }
+
+  .museum-hero-grid,
+  .museum-exhibit {
+    grid-template-columns: 1fr;
   }
 
   .about-highlights-top {
@@ -1772,6 +2348,32 @@ textarea {
   .portrait-image {
     min-height: 18rem;
   }
+
+  .museum-hero-main,
+  .museum-hero-panel,
+  .museum-card,
+  .museum-endcap,
+  .museum-exhibit {
+    border-radius: 22px;
+  }
+
+  .museum-timeline-shell {
+    padding-left: 1.4rem;
+  }
+
+  .museum-timeline-shell::before {
+    left: 0.42rem;
+  }
+
+  .museum-timeline-item::before {
+    left: -1.08rem;
+  }
+
+  .museum-exhibit-media,
+  .museum-exhibit-image {
+    min-height: 11rem;
+  }
+
 
   .about-letter {
     display: grid;
