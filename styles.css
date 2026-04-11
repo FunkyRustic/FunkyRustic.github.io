@@ -2157,6 +2157,16 @@ body.museum-page .site-shell {
   box-shadow: var(--shadow);
 }
 
+.museum-timeline-item:nth-child(odd) .museum-exhibit {
+  background:
+    linear-gradient(145deg, rgba(15, 23, 34, 0.97), rgba(10, 16, 25, 0.95));
+}
+
+.museum-timeline-item:nth-child(even) .museum-exhibit {
+  background:
+    linear-gradient(145deg, rgba(19, 25, 38, 0.97), rgba(12, 19, 30, 0.95));
+}
+
 .museum-exhibit-media {
   position: relative;
   overflow: hidden;
