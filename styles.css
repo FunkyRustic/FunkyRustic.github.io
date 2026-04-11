@@ -2329,8 +2329,8 @@ body.museum-page {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.35rem;
-  height: 2.35rem;
+  width: 2.6rem;
+  height: 2.6rem;
   border: 1px solid rgba(144, 191, 232, 0.18);
   border-radius: 999px;
   background: rgba(17, 27, 39, 0.72);
@@ -2342,8 +2342,8 @@ body.museum-page {
 }
 
 .museum-link-icon img {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.45rem;
+  height: 1.45rem;
   object-fit: contain;
 }
 
