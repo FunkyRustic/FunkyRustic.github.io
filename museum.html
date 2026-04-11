@@ -60,37 +60,19 @@
         <section class="page-hero museum-page-hero">
           <div class="museum-hero-grid">
             <article class="museum-hero-main">
-              <p class="eyebrow">Museum</p>
-              <h1>Early days, laid out as exhibits you can actually follow.</h1>
-              <p class="museum-hero-text">
-                The museum works better as a single vertical timeline: each stop gets a reusable exhibit format with an
-                image, date, title, context, and links instead of splitting the story into separate page modes.
-              </p>
-              <div class="museum-jump-row" aria-label="Museum sections">
-                <a class="museum-jump-link" href="#timeline">Timeline</a>
-                <a class="museum-jump-link" href="#timeline">Exhibits</a>
-                <a class="museum-jump-link" href="#endcap">Next Moves</a>
+              <div class="museum-hero-main-grid">
+                <div class="museum-hero-copy">
+                  <p class="eyebrow">Museum</p>
+                  <h1>Alexander Museum</h1>
+                  <p class="museum-hero-text">Mind the cursed artifacts and enjoy your stay!</p>
+                </div>
+                <div class="museum-hero-idol" aria-hidden="true">
+                  <div class="museum-artifact-frame">
+                    <img class="museum-artifact-image" src="assets/museum/mysterious_idol.png" alt="" />
+                  </div>
+                </div>
               </div>
             </article>
-
-            <aside class="museum-hero-panel" aria-label="Museum concept notes">
-              <p class="museum-panel-label">Current Direction</p>
-              <div class="museum-status-list">
-                <div class="museum-status-item">
-                  <strong>One format, repeated well</strong>
-                  <span>Every entry can use the same visual language, which makes the museum easier to expand.</span>
-                </div>
-                <div class="museum-status-item">
-                  <strong>Timeline becomes the page</strong>
-                  <span>The visitor just scrolls downward through the story instead of switching mental modes.</span>
-                </div>
-                <div class="museum-status-item">
-                  <strong>Plenty of room for links</strong>
-                  <span>Each exhibit can hold soundtrack, credits, interviews, scans, or other fan-relevant artifacts.</span>
-                </div>
-              </div>
-              <p class="museum-code-line">scroll path: tracker scene -> Tyrian -> Unreal era -> Deus Ex</p>
-            </aside>
           </div>
         </section>
 
@@ -101,6 +83,40 @@
 
           <div class="museum-timeline-shell">
             <div class="museum-timeline">
+              <article class="museum-timeline-item">
+                <div class="museum-exhibit">
+                  <div class="museum-exhibit-media">
+                    <img
+                      class="museum-exhibit-image"
+                      src="assets/museum/adlib.png"
+                      alt="AdLib-era artwork"
+                    />
+                    <div class="museum-exhibit-overlay">
+                      <span class="museum-date-pill">1988</span>
+                      <span class="museum-label-pill">AdLib Era</span>
+                    </div>
+                  </div>
+                  <div class="museum-exhibit-copy">
+                    <div class="museum-exhibit-header">
+                      <span class="museum-date-pill">1988</span>
+                      <span class="museum-label-pill">AdLib Era</span>
+                    </div>
+                    <h2 class="museum-exhibit-title">AdLib experiments</h2>
+                    <p class="museum-exhibit-subtitle">Before the tracker aliases and game credits, there were already childhood-era AdLib experiments.</p>
+                    <p class="museum-exhibit-text">
+                      This card marks the earliest starting point in the museum: music made at home before the scene years,
+                      before modules, and before the work that would later break out into public view.
+                    </p>
+                    <div class="museum-link-row">
+                      <a class="museum-link-icon" href="https://alexanderbrandon.bandcamp.com/album/the-ad-lib-collection" target="_blank" rel="noreferrer" aria-label="Listen to The Ad Lib Collection on Bandcamp" title="Bandcamp">
+                        <img src="assets/linklogos/bandcamp_circle_128.png" alt="" />
+                      </a>
+                      <a class="museum-link" href="https://alexanderbrandon.bandcamp.com/album/the-ad-lib-collection" target="_blank" rel="noreferrer">Collection</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
               <article class="museum-timeline-item">
                 <div class="museum-exhibit">
                   <div class="museum-exhibit-media">
@@ -120,19 +136,26 @@
                       <span class="museum-label-pill">Scene Era</span>
                     </div>
                     <h2 class="museum-exhibit-title">Tracker scene and aliases</h2>
-                    <p class="museum-exhibit-subtitle">Before the best-known game credits, there is the MOD and demoscene foundation.</p>
+                    <p class="museum-exhibit-subtitle">This is the old-fashioned way in: tracker culture, aliases, and the roots of game music.</p>
                     <p class="museum-exhibit-text">
-                      This is where the museum should establish the technical and musical DNA behind everything that follows:
-                      tracker composition, aliases, scene groups, and the sample-based workflow that shaped the early sound.
+                      I came up the old-fashioned way through the tracker scene, and this is where I would want people to start.
+                      Follow the aliases, open the scene links, and enjoy the sample-based world that shaped everything that came after.
                     </p>
+                    <div class="museum-quote-card">
+                      <div class="museum-quote-copy">
+                        <p class="museum-quote-text">"I think it is very important to understand game music's roots."</p>
+                        <a class="museum-quote-link" href="https://ocremix.org/info/Composer_Interview:_Alexander_Brandon" target="_blank" rel="noreferrer">OC ReMix Interview</a>
+                      </div>
+                    </div>
                     <div class="museum-meta-row">
-                      <span class="museum-chip">Siren</span>
-                      <span class="museum-chip">Chromatic Dragon</span>
-                      <span class="museum-chip">KFMF</span>
+                      <a class="museum-chip museum-chip-link" href="https://files.scene.org/browse/music/groups/kosmic/" target="_blank" rel="noreferrer">KFMF</a>
+                      <a class="museum-chip museum-chip-link" href="https://modarchive.org/index.php?query=69271&request=view_artist_modules" target="_blank" rel="noreferrer">Necros</a>
+                      <a class="museum-chip museum-chip-link" href="https://modarchive.org/index.php?query=69185&request=view_profile" target="_blank" rel="noreferrer">Purple Motion</a>
+                      <a class="museum-chip museum-chip-link" href="https://modarchive.org/index.php?query=69572&request=view_artist_modules" target="_blank" rel="noreferrer">Skaven</a>
                     </div>
                     <div class="museum-link-row">
-                      <a class="museum-link" href="#">Scene Notes</a>
-                      <a class="museum-link" href="#">Tracker Background</a>
+                      <a class="museum-link" href="https://files.scene.org/browse/music/groups/kosmic/" target="_blank" rel="noreferrer">Kosmic Archive</a>
+                      <a class="museum-link" href="https://modarchive.org/index.php" target="_blank" rel="noreferrer">Mod Archive</a>
                     </div>
                   </div>
                 </div>
@@ -143,8 +166,8 @@
                   <div class="museum-exhibit-media">
                     <img
                       class="museum-exhibit-image"
-                      src="assets/bandcampalbums/tyrian.avif"
-                      alt="Tyrian album artwork"
+                      src="assets/museum/tyrian.png"
+                      alt="Tyrian artwork"
                     />
                     <div class="museum-exhibit-overlay">
                       <span class="museum-date-pill">1995</span>
@@ -157,19 +180,24 @@
                       <span class="museum-label-pill">Tyrian</span>
                     </div>
                     <h2 class="museum-exhibit-title">Tyrian</h2>
-                    <p class="museum-exhibit-subtitle">A strong first anchor for the museum and a clean entry into the DOS era.</p>
+                    <p class="museum-exhibit-subtitle">This is where the scene years turn into a game people can still enjoy today.</p>
                     <p class="museum-exhibit-text">
-                      This is the first exhibit that really lets the format sing: image, release date, role, a short note
-                      on why the work mattered, and links out to soundtrack or credit references without breaking the scroll.
+                      This is one of the clearest places to hear those scene instincts turning into a full game soundtrack.
+                      If you are new to this part of the story, this is a good place to play, listen, and follow the world outward from here.
                     </p>
-                    <div class="museum-meta-row">
-                      <span class="museum-chip">Music</span>
-                      <span class="museum-chip">Story</span>
-                      <span class="museum-chip">Module Era</span>
+                    <div class="museum-quote-card">
+                      <div class="museum-quote-copy">
+                        <p class="museum-quote-text">"Tyrian", the shooter Jason and I came up with, fast became an Epic title.</p>
+                        <a class="museum-quote-link" href="https://www.unrealsp.org/legacy/community/interviews/brandon-18-09-06.html" target="_blank" rel="noreferrer">UnrealSP Interview</a>
+                      </div>
                     </div>
                     <div class="museum-link-row">
-                      <a class="museum-link" href="https://alexanderbrandon.bandcamp.com/album/tyrian-original-soundtrack" target="_blank" rel="noreferrer">Bandcamp</a>
-                      <a class="museum-link" href="https://www.mobygames.com/game/586/tyrian/" target="_blank" rel="noreferrer">MobyGames</a>
+                      <a class="museum-link-icon" href="https://alexanderbrandon.bandcamp.com/album/tyrian-original-soundtrack" target="_blank" rel="noreferrer" aria-label="Listen to the Tyrian soundtrack on Bandcamp" title="Bandcamp">
+                        <img src="assets/linklogos/bandcamp_circle_128.png" alt="" />
+                      </a>
+                      <a class="museum-link" href="https://www.gog.com/en/game/tyrian_2000" target="_blank" rel="noreferrer">GOG</a>
+                      <a class="museum-link" href="https://tyrian.fandom.com/wiki/Tyrian,_the_Wikia" target="_blank" rel="noreferrer">Story</a>
+                      <a class="museum-link" href="https://www.youtube.com/watch?v=ZRY2sGy8NvA" target="_blank" rel="noreferrer">Review</a>
                     </div>
                   </div>
                 </div>
@@ -180,33 +208,123 @@
                   <div class="museum-exhibit-media">
                     <img
                       class="museum-exhibit-image"
-                      src="assets/companylogos/logo_epic.png"
-                      alt="Epic Games logo"
+                      src="assets/museum/jazz_jackrabbit_2.jpg"
+                      alt="Jazz Jackrabbit 2 artwork"
                     />
                     <div class="museum-exhibit-overlay">
-                      <span class="museum-date-pill">1998-1999</span>
+                      <span class="museum-date-pill">1998</span>
                       <span class="museum-label-pill">Epic Years</span>
                     </div>
                   </div>
                   <div class="museum-exhibit-copy">
                     <div class="museum-exhibit-header">
-                      <span class="museum-date-pill">1998-1999</span>
-                      <span class="museum-label-pill">Breakout Era</span>
+                      <span class="museum-date-pill">1998</span>
+                      <span class="museum-label-pill">Jazz Jackrabbit 2</span>
                     </div>
-                    <h2 class="museum-exhibit-title">Jazz Jackrabbit 2, Unreal, Unreal Tournament</h2>
-                    <p class="museum-exhibit-subtitle">The section where the museum gets louder, bigger, and more instantly recognizable.</p>
+                    <h2 class="museum-exhibit-title">Jazz Jackrabbit 2</h2>
+                    <p class="museum-exhibit-subtitle">A bright, fast platformer stop that shows the Epic years were not just shooters.</p>
                     <p class="museum-exhibit-text">
-                      Instead of treating these as separate page sections, the timeline format can keep them grouped as one
-                      era with shared context, then split into individual sub-links or later expandable modules if needed.
+                      This card works as the playful side of the museum's Epic chapter: colorful, kinetic, and still deeply
+                      tied to tracker-era composition. It also gives readers a cleaner bridge from Tyrian into the broader Epic run.
                     </p>
-                    <div class="museum-meta-row">
-                      <span class="museum-chip">Jazz Jackrabbit 2</span>
-                      <span class="museum-chip">Unreal</span>
-                      <span class="museum-chip">Unreal Tournament</span>
+                    <div class="museum-quote-card">
+                      <div class="museum-quote-copy">
+                        <p class="museum-quote-text">"My friend Jason Emery first played the Metroid theme over the phone to me saying 'wow, cool, 5 voices, listen to this...' and the rest is history."</p>
+                        <a class="museum-quote-link" href="https://vgmonline.net/alexanderbrandoninterview/" target="_blank" rel="noreferrer">VGMO Interview</a>
+                      </div>
                     </div>
                     <div class="museum-link-row">
-                      <a class="museum-link" href="https://www.mobygames.com/game/330/unreal/" target="_blank" rel="noreferrer">Unreal Credits</a>
-                      <a class="museum-link" href="https://www.mobygames.com/game/587/unreal-tournament/" target="_blank" rel="noreferrer">UT Credits</a>
+                      <a class="museum-link-icon" href="https://www.epicgames.com/site/en-US/about" target="_blank" rel="noreferrer" aria-label="Visit Epic Games">
+                        <img src="assets/companylogos/logo_epic.png" alt="Epic Games logo" />
+                      </a>
+                      <a class="museum-link-icon" href="https://alexanderbrandon.bandcamp.com/track/back-to-the-lab-from-jazz-jackrabbit-2" target="_blank" rel="noreferrer" aria-label="Listen to Back to the Lab from Jazz Jackrabbit 2 on Bandcamp" title="Bandcamp">
+                        <img src="assets/linklogos/bandcamp_circle_128.png" alt="" />
+                      </a>
+                      <a class="museum-link" href="https://www.gog.com/en/game/jazz_jackrabbit_2_collection" target="_blank" rel="noreferrer">GOG</a>
+                      <a class="museum-link" href="https://jazzjackrabbit.fandom.com/wiki/Jazz_Jackrabbit_2" target="_blank" rel="noreferrer">Story</a>
+                      <a class="museum-link" href="https://www.youtube.com/watch?v=I9Ky1y4f1yE" target="_blank" rel="noreferrer">Review</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="museum-timeline-item">
+                <div class="museum-exhibit">
+                  <div class="museum-exhibit-media">
+                    <img
+                      class="museum-exhibit-image"
+                      src="assets/museum/unreal_box.jpg"
+                      alt="Unreal box art"
+                    />
+                    <div class="museum-exhibit-overlay">
+                      <span class="museum-date-pill">1998</span>
+                      <span class="museum-label-pill">Unreal</span>
+                    </div>
+                  </div>
+                  <div class="museum-exhibit-copy">
+                    <div class="museum-exhibit-header">
+                      <span class="museum-date-pill">1998</span>
+                      <span class="museum-label-pill">Epic Shooter</span>
+                    </div>
+                    <h2 class="museum-exhibit-title">Unreal</h2>
+                    <p class="museum-exhibit-subtitle">One of those rare moments where the music-first approach just worked.</p>
+                    <p class="museum-exhibit-text">
+                      Unreal felt like one of those rare projects where I could just write music and it magically went in.
+                      I want this card to invite people into the full atmosphere, where the mood, world, and score all seem to lock together at once.
+                    </p>
+                    <div class="museum-quote-card">
+                      <div class="museum-quote-copy">
+                        <p class="museum-quote-text">"I pretty much wrote anything I wanted. Cliff would describe the situation and I'd play early builds and the music was written based on inspiration alone."</p>
+                        <a class="museum-quote-link" href="https://www.unrealsp.org/legacy/community/interviews/brandon-18-09-06.html" target="_blank" rel="noreferrer">UnrealSP Interview</a>
+                      </div>
+                    </div>
+                    <div class="museum-link-row">
+                      <a class="museum-link-icon" href="https://www.epicgames.com/site/en-US/about" target="_blank" rel="noreferrer" aria-label="Visit Epic Games">
+                        <img src="assets/companylogos/logo_epic.png" alt="Epic Games logo" />
+                      </a>
+                      <a class="museum-link" href="https://unreal.fandom.com/wiki/Music/Unreal" target="_blank" rel="noreferrer">Music</a>
+                      <a class="museum-link" href="https://www.oldunreal.com/downloads/unreal/full-game-installers/" target="_blank" rel="noreferrer">Game</a>
+                      <a class="museum-link" href="https://unrealdatabase.fandom.com/wiki/Unreal" target="_blank" rel="noreferrer">Story</a>
+                      <a class="museum-link" href="https://www.youtube.com/watch?v=zXMfcyPRllM" target="_blank" rel="noreferrer">Review</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="museum-timeline-item">
+                <div class="museum-exhibit">
+                  <div class="museum-exhibit-media">
+                    <img
+                      class="museum-exhibit-image"
+                      src="assets/bandcampalbums/unreal_tournament_rematch.avif"
+                      alt="Unreal Tournament Rematch album artwork"
+                    />
+                    <div class="museum-exhibit-overlay">
+                      <span class="museum-date-pill">1999</span>
+                      <span class="museum-label-pill">Tournament Era</span>
+                    </div>
+                  </div>
+                  <div class="museum-exhibit-copy">
+                    <div class="museum-exhibit-header">
+                      <span class="museum-date-pill">1999</span>
+                      <span class="museum-label-pill">Unreal Tournament</span>
+                    </div>
+                    <h2 class="museum-exhibit-title">Unreal Tournament</h2>
+                    <p class="museum-exhibit-subtitle">The multiplayer breakout where the score became part of the game's identity for an entire generation.</p>
+                    <p class="museum-exhibit-text">
+                      This exhibit earns its own stop because it is not just another Unreal release. It is a culture-maker:
+                      the maps, the pace, and the music all became shorthand for a whole era of competitive PC play.
+                    </p>
+                    <div class="museum-link-row">
+                      <a class="museum-link-icon" href="https://www.epicgames.com/site/en-US/about" target="_blank" rel="noreferrer" aria-label="Visit Epic Games">
+                        <img src="assets/companylogos/logo_epic.png" alt="Epic Games logo" />
+                      </a>
+                      <a class="museum-link-icon" href="https://materiacollective.bandcamp.com/album/tournament-rematch-unreal-tournament-remixed" target="_blank" rel="noreferrer" aria-label="Listen to Tournament Rematch Unreal Tournament Remixed on Bandcamp" title="Bandcamp">
+                        <img src="assets/linklogos/bandcamp_circle_128.png" alt="" />
+                      </a>
+                      <a class="museum-link" href="https://www.oldunreal.com/downloads/unrealtournament/full-game-installers/" target="_blank" rel="noreferrer">Game</a>
+                      <a class="museum-link" href="https://en.wikipedia.org/wiki/Unreal_Tournament" target="_blank" rel="noreferrer">Story</a>
+                      <a class="museum-link" href="https://www.youtube.com/watch?v=XRF06DpQE0c" target="_blank" rel="noreferrer">Review</a>
                     </div>
                   </div>
                 </div>
@@ -231,18 +349,21 @@
                       <span class="museum-label-pill">Deus Ex</span>
                     </div>
                     <h2 class="museum-exhibit-title">Deus Ex</h2>
-                    <p class="museum-exhibit-subtitle">The handoff point from “early days museum” into broader legacy.</p>
+                    <p class="museum-exhibit-subtitle">The same instinctive approach, but with more of the world already in view.</p>
                     <p class="museum-exhibit-text">
-                      This is where the museum can end its first major run. After this point, the rest of the main site
-                      already carries the professional story, so the museum can either stop here or continue as selected highlights.
+                      Deus Ex followed some of that same tradition, but with a clearer sense of place, locale, and story beforehand.
+                      This is a good place to notice how the music starts locking to the world more deliberately, and how that opens into everything beyond this early era.
                     </p>
-                    <div class="museum-meta-row">
-                      <span class="museum-chip">Music</span>
-                      <span class="museum-chip">Legacy Title</span>
-                      <span class="museum-chip">Bridge Forward</span>
+                    <div class="museum-quote-card">
+                      <div class="museum-quote-copy">
+                        <p class="museum-quote-text">"My favorite was probably Deus Ex overall... it remains one of the top games ever released, so it is my current crown jewel."</p>
+                        <a class="museum-quote-link" href="https://vgmonline.net/alexanderbrandoninterview/" target="_blank" rel="noreferrer">VGMO Interview</a>
+                      </div>
                     </div>
                     <div class="museum-link-row">
-                      <a class="museum-link" href="https://alexanderbrandon.bandcamp.com/album/conspiravision-deus-ex-remixed" target="_blank" rel="noreferrer">Bandcamp</a>
+                      <a class="museum-link-icon" href="https://alexanderbrandon.bandcamp.com/album/conspiravision-deus-ex-remixed" target="_blank" rel="noreferrer" aria-label="Listen to Conspiravision Deus Ex Remixed on Bandcamp" title="Bandcamp">
+                        <img src="assets/linklogos/bandcamp_circle_128.png" alt="" />
+                      </a>
                       <a class="museum-link" href="https://www.mobygames.com/game/1749/deus-ex/" target="_blank" rel="noreferrer">MobyGames</a>
                     </div>
                   </div>

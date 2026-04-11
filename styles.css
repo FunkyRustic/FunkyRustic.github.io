@@ -1774,14 +1774,10 @@ body.museum-page {
 }
 
 .museum-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
-  gap: 1rem;
-  align-items: stretch;
+  display: block;
 }
 
 .museum-hero-main,
-.museum-hero-panel,
 .museum-card,
 .museum-timeline-shell,
 .museum-endcap {
@@ -1814,6 +1810,17 @@ body.museum-page {
   z-index: 1;
 }
 
+.museum-hero-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 16rem);
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.museum-hero-copy {
+  min-width: 0;
+}
+
 .museum-hero-main h1,
 .museum-card h2,
 .museum-card h3,
@@ -1824,7 +1831,7 @@ body.museum-page {
 
 .museum-hero-main h1 {
   margin: 0;
-  max-width: 13ch;
+  max-width: 10ch;
   font-size: clamp(2.7rem, 5vw, 5rem);
   line-height: 0.94;
 }
@@ -1843,13 +1850,54 @@ body.museum-page {
   font-size: 1.06rem;
 }
 
-.museum-hero-panel {
+.museum-hero-idol {
+  display: flex;
+  justify-content: center;
+}
+
+.museum-hero-idol .museum-artifact-frame {
+  width: 100%;
+  min-height: 16.5rem;
+}
+
+.museum-hero-idol .museum-artifact-image {
+  width: min(100%, 12rem);
+  max-height: 12rem;
+}
+
+.museum-artifact-frame {
+  position: relative;
   display: grid;
-  gap: 1rem;
-  align-content: start;
-  padding: 1.45rem;
+  place-items: center;
+  min-height: 15rem;
+  padding: 1rem;
+  border: 1px solid rgba(144, 191, 232, 0.14);
+  border-radius: 22px;
   background:
-    linear-gradient(160deg, rgba(17, 26, 38, 0.96), rgba(10, 17, 26, 0.94));
+    radial-gradient(circle at top, rgba(243, 154, 62, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(8, 14, 22, 0.92), rgba(12, 20, 30, 0.96));
+  overflow: hidden;
+}
+
+.museum-artifact-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 232, 188, 0.16), transparent 28%),
+    repeating-linear-gradient(180deg, rgba(144, 191, 232, 0.05) 0 1px, transparent 1px 5px);
+  pointer-events: none;
+}
+
+.museum-artifact-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 11rem);
+  max-height: 11rem;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 16px 28px rgba(0, 0, 0, 0.38))
+    drop-shadow(0 0 20px rgba(243, 154, 62, 0.16));
 }
 
 .museum-panel-label,
@@ -1975,6 +2023,17 @@ body.museum-page {
   box-shadow:
     inset 0 1px 0 rgba(255, 233, 204, 0.04),
     0 10px 18px rgba(8, 6, 5, 0.18);
+}
+
+.museum-chip-link {
+  text-decoration: none;
+  transition: color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.museum-chip-link:hover {
+  color: #fff4cf;
+  border-color: rgba(243, 154, 62, 0.34);
+  transform: translateY(-1px);
 }
 
 .museum-card-trackers {
@@ -2156,11 +2215,90 @@ body.museum-page {
   line-height: 1.68;
 }
 
+.museum-quote-card {
+  display: grid;
+  gap: 0.55rem;
+  width: calc(100% - 2.4rem);
+  margin: 0.1rem 1.2rem 0.2rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(144, 191, 232, 0.16);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.035), transparent 48%),
+    linear-gradient(145deg, rgba(14, 22, 34, 0.9), rgba(10, 17, 27, 0.86));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 10px 18px rgba(3, 8, 16, 0.12);
+}
+
+.museum-quote-card.has-media {
+  grid-template-columns: minmax(0, 1fr) 5.25rem;
+  align-items: start;
+}
+
+.museum-quote-copy {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.museum-quote-text {
+  margin: 0;
+  color: #f4eadb;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.museum-quote-link {
+  width: fit-content;
+  color: rgba(232, 243, 252, 0.76);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.museum-quote-link:hover {
+  color: #fff4cf;
+}
+
+.museum-quote-media {
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  border: 1px solid rgba(144, 191, 232, 0.16);
+  background: rgba(17, 27, 39, 0.72);
+}
+
+.museum-quote-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .museum-meta-row,
 .museum-link-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
+}
+
+@media (max-width: 720px) {
+  .museum-quote-card {
+    width: calc(100% - 1.2rem);
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+
+  .museum-quote-card.has-media {
+    grid-template-columns: 1fr;
+  }
+
+  .museum-quote-media {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
 }
 
 .museum-link {
@@ -2250,9 +2388,16 @@ body.museum-page {
     padding-top: 3rem;
   }
 
-  .museum-hero-grid,
   .museum-exhibit {
     grid-template-columns: 1fr;
+  }
+
+  .museum-hero-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .museum-hero-idol .museum-artifact-frame {
+    min-height: 13rem;
   }
 
   .about-highlights-top {
